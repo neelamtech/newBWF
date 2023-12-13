@@ -39,9 +39,15 @@
         <div class="sidebar">
             <ul class="sidebar--items">
                 <li>
-                    <a href="#" id="active--link">
+                    <a href="dashboard.html" id="active--link">
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
                         <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Appoinments.html">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Appoinments</span>
                     </a>
                 </li>
                 <li>
@@ -68,7 +74,7 @@
                 <li>
                     <a href="patienthistory.html">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Patients History</span>
+                        <span class="sidebar--item">Patients</span>
                     </a>
                 </li>
                 <li>
@@ -78,7 +84,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="support.html">
+                    <a href="supports.html">
                         <span class="icon icon-6"><i class="ri-customer-service-line"></i></span>
                         <span class="sidebar--item">Support</span>
                     </a>
@@ -100,7 +106,57 @@
             </ul>
         </div>
         <div class="main--content">
-            <h3>Help Topics</h3>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                .contact-form {
+                    max-width: 400px;
+                    margin: 0 auto;
+                }
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                }
+                input, textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    box-sizing: border-box;
+                }
+                button {
+                    background-color: blue;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: green;
+                }
+            </style>
+        </head>
+        <body>
+        
+            <h1><br>Contact Us</h1>
+        
+            <div class="contact-form">
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
             
 
             

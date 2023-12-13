@@ -488,4 +488,7 @@ th {
     .sidebar {
         padding: 10px;
     }
+    .h3{
+        background-color: #85ade3;
+    }
 }

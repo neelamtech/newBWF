@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,39 @@
     <link rel="stylesheet" href="Styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Dashboard</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-style: none;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            border-style: none;
+        }
+
+        .table1 table{
+            width: 100%;
+            background-color: rgb(207, 237, 239);
+            border-style: none;
+        }
+
+        .selectdate {
+            width: 20%;
+            height: 5%;
+            border: 2px solid rgb(160, 235, 241);
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px 0 rgb(204, 204, 204);
+            background-color: rgb(160, 235, 241);
+        }
+    </style>
 </head>
+
 <body>
     <section class="header">
         <div class="logo">
@@ -16,7 +49,7 @@
         </div>
         <div class="search--notification--profile">
             <div class="search">
-                <input type="text" placeholder="Search Scdule..">
+                <input type="text" placeholder="Search Schedule..">
                 <button><i class="ri-search-2-line"></i></button>
             </div>
             <div class="notification--profile">
@@ -30,7 +63,8 @@
                     <i class="ri-wechat-2-line"></i>
                 </div>
                 <div class="picon profile">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1xb3sRTUv_hlUJP4bOMIx7NS0XEycmCYAw&usqp=CAU" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1xb3sRTUv_hlUJP4bOMIx7NS0XEycmCYAw&usqp=CAU"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -39,9 +73,15 @@
         <div class="sidebar">
             <ul class="sidebar--items">
                 <li>
-                    <a href="#" id="active--link">
+                    <a href="dashboard.html" id="active--link">
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
                         <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Appoinments.html">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Appoinments</span>
                     </a>
                 </li>
                 <li>
@@ -54,21 +94,22 @@
                     <a href="reliabledoctors.html">
                         <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
                         <span class="sidebar--item" style="white-space: nowrap;">Doctor</span>
+
                         <body>
                             <div class="button input-box" onclick="openreliabledoctors()">
                             </div>
                             <script>
-                              function openreliabledoctors() {
-                                window.location.href = "openreliabledoctors.html";
-                              }
+                                function openreliabledoctors() {
+                                    window.location.href = "openreliabledoctors.html";
+                                }
                             </script>
-                          </body>
+                        </body>
                     </a>
                 </li>
                 <li>
                     <a href="patienthistory.html">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Patients History</span>
+                        <span class="sidebar--item">Patients</span>
                     </a>
                 </li>
                 <li>
@@ -78,7 +119,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="support.html">
+                    <a href="supports.html">
                         <span class="icon icon-6"><i class="ri-customer-service-line"></i></span>
                         <span class="sidebar--item">Support</span>
                     </a>
@@ -100,32 +141,34 @@
             </ul>
         </div>
         <div class="main--content">
-            <h1>Appoinments</h1>
-            
-            <div class="patients Appoinments">
+            <h3><br>Schedule</h3>
+            <br>
+            <input type="date" class="selectdate">
+
+            <div class="patients Appointments">
                 <div class="title">
-                    
-            </div>
+
+                </div>
                 <div class="table1">
                     <table>
                         <thead>
                             <tr>
                                 <th>Patient Name</th>
-                                <th>Date in</th>
+                                <th>Date</th>
                                 <th>Gender</th>
                                 <th>Age</th>
                                 <th>Diseases</th>
-                                <th>Status</th>
+
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Cameron Williamson</td>
-                                <td>12/12/2023</td>
+                                <td>Somil Bajaj</td>
+                                <td>11/12/2023</td>
                                 <td>Male</td>
                                 <td>61</td>
                                 <td>typhoid</td>
-                                <td class="pending">pending</td>
+
                             </tr>
                             <tr>
                                 <td>Geeta Sharma</td>
@@ -133,64 +176,14 @@
                                 <td>Female</td>
                                 <td>54</td>
                                 <td>Cataract surgery</td>
-                                <td class="pending">pending</td>
+
                             </tr>
                             <tr>
-                                <td>John Adams</td>
+                                <td>Rahul Jain</td>
                                 <td>12/12/2023</td>
                                 <td>Male</td>
                                 <td>56</td>
                                 <td>Heart surgery</td>
-                                <td class="pending">pending</td>
-
-                            </tr>
-                            <tr>
-                                <td>Thomas Jefferson</td>
-                                <td>12/12/2023</td>
-                                <td>Male</td>
-                                <td>11</td>
-                                <td>Blood Pressure</td>
-                                <td class="confirmed">Confirmed</td>
-                            </tr>
-                            <tr>
-                                <td>James Madison</td>
-                                <td>12/12/2023</td>
-                                <td>Male</td>
-                                <td>69</td>
-                                <td>Sugar Checkup</td>
-                                <td class="confirmed">Confirmed</td>
-                            </tr>
-                            <tr>
-                                <td>Andrew Jackson</td>
-                                <td>11/12/2023</td>
-                                <td>Male</td>
-                                <td>88</td>
-                                <td>Blood Pressure</td>
-                                <td class="confirmed">Confirmed</td>
-                            </tr>
-                            <tr>
-                                <td>John Jackson</td>
-                                <td>11/12/2023</td>
-                                <td>Male</td>
-                                <td>70</td>
-                                <td>typhoid</td>
-                                <td class="confirmed">Confirmed</td>
-                            </tr>
-                            <tr>
-                                <td>Peter Thomas</td>
-                                <td>11/12/2023</td>
-                                <td>Male</td>
-                                <td>50</td>
-                                <td>typhoid</td>
-                                <td class="confirmed">Confirmed</td>
-                            </tr>
-                            <tr>
-                                <td>Jasmin Thomas</td>
-                                <td>11/12/2023</td>
-                                <td>Female</td>
-                                <td>47</td>
-                                <td>Polio</td>
-                                <td class="confirmed">Confirmed</td>
                             </tr>
                         </tbody>
                     </table>
@@ -199,6 +192,6 @@
         </div>
     </section>
 
-</div>
-<script src="main.js"></script>
-        
+    <script src="main.js"></script>
+
+    <body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Dashboard</title>
 </head>
+
 <body>
     <section class="header">
         <div class="logo">
@@ -16,7 +18,7 @@
         </div>
         <div class="search--notification--profile">
             <div class="search">
-                <input type="text" placeholder="Search Scdule..">
+                <input type="text" placeholder="Search Schedule..">
                 <button><i class="ri-search-2-line"></i></button>
             </div>
             <div class="notification--profile">
@@ -30,7 +32,8 @@
                     <i class="ri-wechat-2-line"></i>
                 </div>
                 <div class="picon profile">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1xb3sRTUv_hlUJP4bOMIx7NS0XEycmCYAw&usqp=CAU" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1xb3sRTUv_hlUJP4bOMIx7NS0XEycmCYAw&usqp=CAU"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -60,19 +63,20 @@
                     <a href="reliabledoctors.html">
                         <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
                         <span class="sidebar--item" style="white-space: nowrap;">Doctor</span>
+
                         <body>
                             <div class="button input-box" onclick="openreliabledoctors()">
                             </div>
                             <script>
-                              function openreliabledoctors() {
-                                window.location.href = "openreliabledoctors.html";
-                              }
+                                function openreliabledoctors() {
+                                    window.location.href = "openreliabledoctors.html";
+                                }
                             </script>
-                          </body>
+                        </body>
                     </a>
                 </li>
                 <li>
-                    <a href="parenthistory.html">
+                    <a href="patienthistory.html">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>
                         <span class="sidebar--item">Patients</span>
                     </a>
@@ -105,5 +109,106 @@
                 </li>
             </ul>
         </div>
-    </section>    
-</body>
+        <div class="main--content">
+            <br>
+            <div>
+                <strong>
+                    <h3 class="patie_name_label">Patient Name :</h3>
+                </strong>
+            </div>
+            <div  class="patie_name" id="name">
+                <strong>
+
+                    <h3>Neelam Koli</h3>
+                </strong>
+            </div>
+            <br>
+            <div class="form">
+                <form>
+
+                    <br>
+                    <br>
+                    <div id="select">
+                        <label for="medicine">Medicine</label>
+                        <input type="text" placeholder="Enter name" class="all_buttons" />
+                        <br>
+                        <br>
+
+                        <label for="medicine">Dosage</label>
+                        <input type="text" placeholder="Enter name" class="all_buttons" />
+
+                        <br>
+                        <br>
+
+                        <label for="medicine">Frequency</label>
+                        <input type="text" placeholder="Enter name" class="all_buttons" />
+
+                        <br>
+                        <br>
+
+                        <label for="medicine">Time</label>
+                        <input type="text" placeholder="Enter name" class="all_buttons" />
+
+                    </div>
+                    <input type="submit" value="save" class="save_button" />
+                </form>
+            </div>
+            <style>
+               .patie_name_label {
+                    display: block;
+                }
+
+                .patie_name {
+                    display: inline;
+                }
+
+                #name {
+                    margin-left: 10px;
+                    font-size: 25px;
+                    color: black;
+                }
+
+                .form {
+                    border: 1px solid rgba(124, 255, 159, 0.878);
+                    border-radius: 10px;
+                    box-shadow: 0 3px 9px 0 rgb(192, 192, 192);
+                    width: 30%;
+                    height: 50%;
+                    align-content: center;
+                    background-color: rgba(124, 255, 159, 0.878);
+                }
+
+                .form form {
+                    margin-left: 20px;
+                    margin-top: 10px;
+                }
+
+                #name {
+                    align-items: center;
+                }
+
+                #select {
+                    width: 80rem;
+                    height: 10rem;
+                }
+
+                .all_buttons {
+                    text-decoration: white;
+                    width: 20%;
+                    height: 20%;
+                    border-radius: 10px;
+                    border-color: rgb(144, 205, 233);
+                    background-color: rgb(144, 205, 233);
+                }
+
+                .all_buttons option {
+                    background-color: rgb(144, 205, 233);
+                }
+
+                .all_buttons option:hover {
+                    background-color: rgb(144, 205, 233);
+                }
+
+                .save_button {}
+            </style>
+        </div>

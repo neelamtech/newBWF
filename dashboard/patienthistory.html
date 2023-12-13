@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="Styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Dashboard</title>
+    <style>
+        .addpres{
+            border: 2px solid rgb(139, 211, 242);
+            border-radius: 4px;
+            border-color: rgb(139, 211, 242);
+            width: 40%;
+            background-color: rgb(139, 211, 242);
+            box-shadow: 0 3px 7px 0 rgb(201, 201, 201);
+        }
+    </style>
 </head>
 <body>
     <section class="header">
@@ -39,9 +49,15 @@
         <div class="sidebar">
             <ul class="sidebar--items">
                 <li>
-                    <a href="#" id="active--link">
+                    <a href="dashboard.html" id="active--link">
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
                         <span class="sidebar--item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Appoinments.html">
+                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Appoinments</span>
                     </a>
                 </li>
                 <li>
@@ -68,7 +84,7 @@
                 <li>
                     <a href="patienthistory.html">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Patients History</span>
+                        <span class="sidebar--item">Patients</span>
                     </a>
                 </li>
                 <li>
@@ -110,34 +126,40 @@
                         <th>Name</th>
                         <th>Name</th>
                         <th>Date</th>
+                        <th>Age</th>
                         <th>Gender</th>
-                        <th>Status</th>
+                        <th>Prescription</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Cameron Williamson</td>
-                        <td>Cameron Williamson</td>
-                        <td>12/12/2023</td>
-                        <td>Male</td>
-                        <td>61</td>
+                    <tr><td>Neelam Koli</td>
+                        <td>Neelam Koli</td>
+                        <td>13/12/2023</td>
+                        <td>24</td>
+                        <td>Female</td>
+                        <td><a href="addPrescription.html"><button class="addpres" type="button">Add Prescription</button></td>
                     </tr>
-                    <tr><td>Cameron Williamson</td>
-                        <td>Cameron Williamson</td>
-                        <td>12/12/2023</td>
-                        <td>Male</td>
-                        <td>61</td>
+                    <tr><td>Megha Gupta</td>
+                        <td>Megha Gupta</td>
+                        <td>13/12/2023</td>
+                        <td>26</td>
+                        <td>Female</td>
+                        <td><a href="addPrescription.html"><button class="addpres" type="button">Add Prescription</button></td>
                     </tr>
-                    <tr><td>Cameron Williamson</td>
-                        <td>Cameron Williamson</td>
+                    <tr><td>Rushikesh Raut</td>
+                        <td>Rushikesh Raut</td>
                         <td>12/12/2023</td>
-                        <td>Male</td>
                         <td>61</td>
+                        <td>Male</td>
+                        <td><a href="addPrescription.html"><button class="addpres" type="button">Add Prescription</button></td>
+                        
                     </tr>
-                    <tr><td>Cameron Williamson</td>
-                        <td>Cameron Williamson</td>
+                    <tr><td>Somil Bajaj</td>
+                        <td>Somil Bajaj</td>
                         <td>12/12/2023</td>
+                        <td>50</td>
                         <td>Male</td>
-                        <td>61</td>
+                        <td><a href="addPrescription.html"><button class="addpres" type="button">Add Prescription</button></td>
                     </tr>
         </div>
     </div>
