@@ -32,7 +32,7 @@
                     <i class="ri-wechat-2-line"></i>
                 </div>
                 <div class="picon profile">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1xb3sRTUv_hlUJP4bOMIx7NS0XEycmCYAw&usqp=CAU"
+                    <img src="https://media.istockphoto.com/id/1330046035/photo/headshot-portrait-of-smiling-female-doctor-in-hospital.jpg?s=612x612&w=0&k=20&c=fsNQPbmFIxoKA-PXl3G745zj7Cvr_cFIGsYknSbz_Tg="
                         alt="">
                 </div>
             </div>
@@ -116,7 +116,7 @@
                     <h3 class="patie_name_label">Patient Name :</h3>
                 </strong>
             </div>
-            <div  class="patie_name" id="name">
+            <div class="patie_name" id="name">
                 <strong>
 
                     <h3>Neelam Koli</h3>
@@ -126,35 +126,75 @@
             <div class="form">
                 <form>
 
+                    <div class="select">
+                        <div class="date">
+                        <label for="date" class="date">Date</label>
+                        <input type="text" placeholder="Type date" class="all_buttons6" />
+                        </div>
                     <br>
+                    <hr>
                     <br>
-                    <div id="select">
+
+                    <div class="select">
+                        <div>
+                        <label for="disease">Disease</label>
+                        <input type="text" placeholder="Type here" class="all_buttons0" />
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="select">
+                        <br>
+                        <div>
                         <label for="medicine">Medicine</label>
-                        <input type="text" placeholder="Enter name" class="all_buttons" />
+                        <input type="text" placeholder="Enter Medicine" class="all_buttons1" />
                         <br>
+                        <label for="dosage" class="medi dosage">Dosage</label>
+                        <input type="text" placeholder="Enter Dosage" class="all_buttons2" />
                         <br>
-
-                        <label for="medicine">Dosage</label>
-                        <input type="text" placeholder="Enter name" class="all_buttons" />
-
+                        <label for="time" class="medi time">Time</label>
+                        <input type="text" placeholder="Enter Time" class="all_buttons3" />
+                    </div>
                         <br>
+                        <hr>
                         <br>
-
-                        <label for="medicine">Frequency</label>
-                        <input type="text" placeholder="Enter name" class="all_buttons" />
-
+                        <div class="select">
+                            <div>
+                            <label for="diagnose">Diagnose</label>
+                            <input type="text" placeholder="Enter Diagnose" class="all_buttons4" />
+                        </div>
                         <br>
+                        <hr>
                         <br>
-
-                        <label for="medicine">Time</label>
-                        <input type="text" placeholder="Enter name" class="all_buttons" />
+                        <div class="select">
+                            <div>
+                            <label for="test">Test</label>
+                            <input type="text" placeholder="Enter Tests" class="all_buttons5" />
+                        </div>
+                        
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="select">
+                            <div>
+                            <label for="bloodpressure">Blood Pressure</label>
+                            <input type="text" placeholder="Enter Blood Pressure" class="all_buttons7" />
+                        </div>
+                        
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="buttons_div">
+                            <input type="submit" value="Save" class="save_button" />
+                            <input type="submit" value="Cancel" class="cancel_button" />
+                        </div>
 
                     </div>
-                    <input type="submit" value="save" class="save_button" />
+                    
                 </form>
             </div>
+            
             <style>
-               .patie_name_label {
+                .patie_name_label {
                     display: block;
                 }
 
@@ -169,13 +209,13 @@
                 }
 
                 .form {
-                    border: 1px solid rgba(124, 255, 159, 0.878);
+                    border: 1px solid white;
                     border-radius: 10px;
                     box-shadow: 0 3px 9px 0 rgb(192, 192, 192);
                     width: 30%;
-                    height: 50%;
+                    height: 75%;
                     align-content: center;
-                    background-color: rgba(124, 255, 159, 0.878);
+                    background-color: rgba(255, 255, 255, 0.878);
                 }
 
                 .form form {
@@ -187,28 +227,100 @@
                     align-items: center;
                 }
 
-                #select {
+                .select {
                     width: 80rem;
                     height: 10rem;
                 }
 
-                .all_buttons {
+                .select label{
+                    margin-left: 1%;
+                    font-weight: 500;
+                }
+                .select ::placeholder{
+                    color: rgb(215, 215, 215);
+                }
+
+                .all_buttons0,.all_buttons1,.all_buttons2,.all_buttons3,.all_buttons4,.all_buttons5,.all_buttons6,.all_buttons7 {
                     text-decoration: white;
-                    width: 20%;
+                    width: 150px;
                     height: 20%;
-                    border-radius: 10px;
-                    border-color: rgb(144, 205, 233);
-                    background-color: rgb(144, 205, 233);
+                    border-left: 1px solid white;
+                    border-top: 1px solid white;
+                    border-right: 1px solid white;
+                    border-bottom: 1px solid rgb(207, 207, 207);
+                    
+                    
+                    background-color: rgb(255, 255, 255);
+                    
+                }
+                .all_buttons0{
+                    margin-left: 3.5%;
                 }
 
-                .all_buttons option {
-                    background-color: rgb(144, 205, 233);
+                .all_buttons1{
+                    margin-left: 2.8%;
                 }
-
-                .all_buttons option:hover {
-                    background-color: rgb(144, 205, 233);
+                .all_buttons2{
+                    margin-left: 4.7%;
                 }
+                .all_buttons3{
+                    margin-left: 5.8%;
+                }
+                .all_buttons4{
+                    margin-left: 3.30%;
+                }
+                .all_buttons5{
+                    margin-left: 5.4%;
+                }
+                .all_buttons6{
+                    align-items: right;
+                    margin-left: 2.5%;
+                }
+                .all_buttons7{
+                    margin-left: 1.5%;
 
-                .save_button {}
+                }
+                .date{
+                    margin-left: 5%;
+                    font: size 5px;
+                    align-items:right;
+                }
+            
+                .save_button,.cancel_button {
+                    width: 80px;
+                    height: 30px;
+                    background-color: rgb(202, 246, 246);
+                    border: 2px solid rgb(202, 246, 246);
+                    border-radius: 4px;
+                    margin-left: 0px;
+                    margin-top: 0%;
+                    
+                }
+                .cancel_button {
+                    margin-top: 20px;
+                    margin-left: 5px;
+
+                }
+                .buttons_div {
+                    margin-left: 70px;
+                }
+                .medi{
+
+                }
+                .dosage{
+                    font-size: 12px;
+                }
+                .time{
+                    font-size: 12px;
+                }
+                hr{
+                    margin-left: 13px;
+                    width: 250px;
+                }
             </style>
         </div>
+    </section>
+    
+    <script src="main.js"></script>
+    </body>
+</html>
